@@ -1,0 +1,115 @@
+/*
+
+Some stuff taken from: "Smashing HTML5" by:
+
+    Author: Enrique Ramírez
+    Autor URI: http://enrique-ramirez.com
+
+*/
+
+@import url("reset.css");
+
+/***** Global *****/
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h1 {font-size: 2em }
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em}     /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+}
+
+h3, h4, h5, h6 { margin-top: .8em; }
+
+hr { border: 2px solid #EEEEEE; }
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+    color: #333;
+    padding: 0 1px;
+    text-decoration: underline;
+}
+
+h1 a:link, h1 a:visited {
+    text-decoration: none;
+}
+    
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+
+/* Main content layout */
+
+.home {
+    padding: 1em;
+    margin: auto;
+    max-width: 70em;
+}
+
+#contentinfo {
+    margin-top: 3em;
+}
+
+/* Powered by Footer */
+#about {
+    color: #777;
+}
+
+/* Home page */
+
+.main-info a:link, .main-info a:visited {
+    text-decoration: none;
+}
+
+.info-block {
+    margin: 1em;
+    padding: 1em;
+    float: left;
+    width: 27%;
+    background-color: white;
+}
+
+#twitter-feed  {
+   margin-left: 0; 
+}
+
+#contact-info {
+   margin-right: 0; 
+}
+
+.info-block ul {
+    margin-bottom: 1.27em;
+}
+
+.info-block li {
+    margin-bottom: 0.5em;
+}
+
+.info-block  h2 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+.availability {
+    font-weight: bold;
+    color: green;
+}
