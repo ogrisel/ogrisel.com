@@ -13,17 +13,17 @@ Some stuff taken from: "Smashing HTML5" by:
 /* Body */
 body {
     background: url('../images/bright_squares.png') repeat 0 0 scroll;
-    color: #000305;
+    color: #472711;
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    line-height: 1.429;
+    font-family: 'Open Sans','Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
 /* Headings */
-h1 {font-size: 2em; margin: .8em }
+h1 {font-size: 2em; margin: .8em; text-shadow: 1px 1px 0 #fff; }
 h2 {font-size: 1.571em} /* 22px */
 h3 {font-size: 1.429em} /* 20px */
 h4 {font-size: 1.286em} /* 18px */
@@ -31,31 +31,33 @@ h5 {font-size: 1.143em} /* 16px */
 h6 {font-size: 1em}     /* 14px */
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.1;
     margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
 
-hr { border: 2px solid #EEEEEE; }
+hr { border: 2px solid #eee; }
+
+h1 strong {
+    color: #7f3300;
+}
 
 /* Anchors */
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
-    color: #333;
+    color: #1c5209;
     padding: 0 1px;
-    text-decoration: underline;
-}
-
-h1 a:link, h1 a:visited {
     text-decoration: none;
 }
-    
+
+   
 /* Paragraphs */
 p {margin-bottom: 1.143em;}
+
+strong {font-weight: 700;}
 
 /* Main content layout */
 
@@ -74,12 +76,12 @@ p {margin-bottom: 1.143em;}
     color: #777;
 }
 
-/* Home page */
-
-.info-block a:link, .info-block a:visited {
-    text-decoration: none;
-    color: #1c5209;
+/* Helpers */
+.light {
+    font-weight: 300;
 }
+
+/* Home page */
 
 .info-block {
     margin: 1em;
@@ -88,6 +90,7 @@ p {margin-bottom: 1.143em;}
     width: 27%;
     min-width: 18em;
     background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .info-block ul {
@@ -103,15 +106,15 @@ p {margin-bottom: 1.143em;}
 }
 
 .event-date {
-    font-style: italic;
-    color: #777;
+    color: #999;
     margin-bottom: .3em;
 }
 
 #availability-info h2 { 
-    margin-bottom: 0 }
+    margin-bottom: 0;
+    color: black;
+}
 
 .availability {
-    font-weight: bold;
-    color: green;
+    color: #2ab300;
 }
