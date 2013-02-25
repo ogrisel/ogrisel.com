@@ -12,7 +12,7 @@ Some stuff taken from: "Smashing HTML5" by:
 /***** Global *****/
 /* Body */
 body {
-    background: #F5F4EF;
+    background: url('../images/bright_squares.png') repeat 0 0 scroll;
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -23,7 +23,7 @@ body {
 }
 
 /* Headings */
-h1 {font-size: 2em }
+h1 {font-size: 2em; margin: .8em }
 h2 {font-size: 1.571em} /* 22px */
 h3 {font-size: 1.429em} /* 20px */
 h4 {font-size: 1.286em} /* 18px */
@@ -76,8 +76,9 @@ p {margin-bottom: 1.143em;}
 
 /* Home page */
 
-.main-info a:link, .main-info a:visited {
+.info-block a:link, .info-block a:visited {
     text-decoration: none;
+    color: #1c5209;
 }
 
 .info-block {
@@ -85,15 +86,8 @@ p {margin-bottom: 1.143em;}
     padding: 1em;
     float: left;
     width: 27%;
-    background-color: white;
-}
-
-#twitter-feed  {
-   margin-left: 0; 
-}
-
-#contact-info {
-   margin-right: 0; 
+    min-width: 18em;
+    background-color: rgba(255,255,255,0.7);
 }
 
 .info-block ul {
@@ -101,12 +95,7 @@ p {margin-bottom: 1.143em;}
 }
 
 .info-block li {
-    margin-bottom: 0.5em;
-}
-
-.info-block  h2 {
-    margin-top: .5em;
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
 }
 
 .event-name {
@@ -118,6 +107,9 @@ p {margin-bottom: 1.143em;}
     color: #777;
     margin-bottom: .3em;
 }
+
+#availability-info h2 { 
+    margin-bottom: 0 }
 
 .availability {
     font-weight: bold;
