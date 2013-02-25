@@ -24,3 +24,5 @@ SOCIAL = (('@ogrisel on twitter', 'http://twitter.com/ogrisel'),
 DEFAULT_PAGINATION = 10
 
 DISPLAY_PAGES_ON_MENU = ('machine_learning.rst',)
+
+FILES_TO_COPY = (('extra/CNAME', 'CNAME'),)
