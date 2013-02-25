@@ -105,8 +105,18 @@ p {margin-bottom: 1.143em;}
 }
 
 .info-block  h2 {
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-top: .5em;
+    margin-bottom: 0.5em;
+}
+
+.event-name {
+    font-weight: bold;
+}
+
+.event-date {
+    font-style: italic;
+    color: #777;
+    margin-bottom: .3em;
 }
 
 .availability {
