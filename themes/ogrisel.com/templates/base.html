@@ -14,31 +14,44 @@
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}"><strong>{{ SITENAME }}</strong> <span class="light">{{ SITESUBTITLE }}</span></a></h1>
-        </header><!-- /#banner -->
+    <header id="banner" class="body">
+            <h1><a href="{{ SITEURL }}"><strong>{{ SITENAME }}</strong> <span class="light">{{ SITESUBTITLE }}</span></a></h1>
+    </header><!-- /#banner -->
 
-        <!--
-        <nav id="menu"><ul>
-        {% for title, link in MENUITEMS %}
-            <li><a href="{{ link }}">{{ title }}</a></li>
-        {% endfor %}
-        {% if DISPLAY_PAGES_ON_MENU %}
-          {% for p in PAGES %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-          {% endfor %}
-        {% else %}
-          {% for cat, null in categories %}
-            <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-          {% endfor %}
-        {% endif %}
-        </ul></nav>--><!-- /#menu -->
-        {% block content %}
-        {% endblock %}
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Website powered by <a href="http://getpelican.com/">Pelican</a> and background by <a href="http://subtlepatterns.com/bright-squares/">Waseem Dahman</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+    <!--
+    <nav id="menu"><ul>
+    {% for title, link in MENUITEMS %}
+        <li><a href="{{ link }}">{{ title }}</a></li>
+    {% endfor %}
+    {% if DISPLAY_PAGES_ON_MENU %}
+      {% for p in PAGES %}
+        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+      {% endfor %}
+    {% else %}
+      {% for cat, null in categories %}
+        <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+      {% endfor %}
+    {% endif %}
+    </ul></nav>--><!-- /#menu -->
+    {% block content %}
+    {% endblock %}
+    <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+            Website powered by <a href="http://getpelican.com/">Pelican</a> and background by <a href="http://subtlepatterns.com/bright-squares/">Waseem Dahman</a>.
+            </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38837703-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
 </body>
 </html>
