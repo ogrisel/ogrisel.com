@@ -3,7 +3,7 @@
 
 AUTHOR = u'Olivier Grisel'
 SITENAME = u'Olivier Grisel'
-SITESUBTITLE = u"Freelance Machine Learning Expert"
+SITESUBTITLE = u"Machine Learning Expert"
 SITEURL = 'http://ogrisel.com'
 
 TIMEZONE = 'Europe/Paris'
