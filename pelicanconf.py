@@ -25,4 +25,5 @@ DEFAULT_PAGINATION = 10
 
 DISPLAY_PAGES_ON_MENU = ('machine_learning.rst',)
 
-FILES_TO_COPY = (('extra/CNAME', 'CNAME'),)
+STATIC_PATHS = ['extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
